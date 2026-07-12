@@ -209,10 +209,18 @@ body.splash-active { overflow: hidden; }
 
 /* ═══════════ NAVBAR ═══════════ */
 .nav-logo-img {
-  height: 48px; width: auto;
-  object-fit: contain; transition: opacity .2s;
+  height: 64px; width: auto;
+  object-fit: contain; transition: all .3s ease;
 }
 .nav-logo-img:hover { opacity: .85; }
+
+.navbar:not(.scrolled) .nav-logo-img {
+  filter: brightness(0) invert(1);
+}
+.navbar.scrolled .nav-logo-img {
+  height: 48px;
+}
+
 
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -312,6 +320,8 @@ body.splash-active { overflow: hidden; }
   background: none; border: none; cursor: pointer;
 }
 .nav-burger span { width: 24px; height: 2px; background: var(--ink); transition: .3s; }
+.navbar:not(.scrolled) .nav-burger span { background: #ffffff; }
+
 /* ═══════════ HERO ═══════════ */
 .hero {
   position: relative; min-height: 100vh; overflow: hidden;
@@ -322,7 +332,7 @@ body.splash-active { overflow: hidden; }
 
 .hero-bigtext {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
@@ -357,9 +367,18 @@ body.splash-active { overflow: hidden; }
 .hero-corner-tr { position: absolute; top: 108px; right: 48px; z-index: 10; display: flex; gap: 3px; align-items: flex-end; }
 .hero-corner-tr span { width: 3px; background: var(--accent); opacity: .5; }
 .hero-exp-tag { position: absolute; bottom: 200px; right: 48px; z-index: 10; font-family: 'Space Grotesk'; font-size: 13px; letter-spacing: 2px; color: var(--ink-soft); }
-.hero-subtitle { position: absolute; bottom: 70px; left: 50%; transform: translateX(-50%); z-index: 10; text-align: center; width: 90%; }
-.hero-subtitle h2 { font-size: clamp(16px, 2vw, 22px); letter-spacing: 4px; color: var(--ink); font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
-.hero-subtitle p { font-size: 14px; color: var(--ink-soft); letter-spacing: 1px; margin-bottom: 24px; }
+.hero-subtitle {
+  position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+  z-index: 10; text-align: center; width: 90%; max-width: 850px;
+}
+.hero-subtitle h2 {
+  font-size: clamp(16px, 2.2vw, 24px); line-height: 1.5; letter-spacing: 0.5px;
+  color: #ffffff; font-weight: 500; margin-bottom: 20px;
+}
+.hero-subtitle p {
+  font-size: 14px; color: var(--accent-light); letter-spacing: 2px;
+  text-transform: uppercase; font-weight: 600; margin-bottom: 36px;
+}
 .hero-btn { background: var(--accent); color: #ffffff; border: none; padding: 14px 32px; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer; transition: all .3s; }
 .hero-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,102,255,0.25); }
 
