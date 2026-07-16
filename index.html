@@ -22,7 +22,7 @@
   <!-- ═══════════ NAVBAR ═══════════ -->
 <nav class="navbar" id="navbar">
   <a href="#hero" class="nav-logo">
-    <img src="assets/service/Icone iksa sans backround.png" alt="IKSATECH Digital Services" class="nav-logo-img"/>
+    <img src="assets/logo/logo.png" alt="IKSATECH Digital Services" class="nav-logo-img"/>
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about" class="nav-item">À propos</a></li>
@@ -36,34 +36,37 @@
   <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Parler à un Expert →</button>
   <button class="nav-burger" id="navBurger"><span></span><span></span><span></span></button>
 </nav>
-  <!-- ═══════════ 1. HERO ═══════════ -->
-  <section class="hero" id="hero">
-    <canvas id="heroCanvas"></canvas>
 
-    <div class="lamp">
-      <div class="lamp-cone lamp-left"></div>
-      <div class="lamp-cone lamp-right"></div>
-      <div class="lamp-line"></div>
-      <div class="lamp-glow"></div>
-      <div class="lamp-haze"></div>
+  <!-- ═══════════ HERO V2 ═══════════ -->
+<section class="hero-v2" id="hero">
+
+    <!-- Video Background (Optional) -->
+    <video class="hero-v2-video" autoplay muted loop playsinline>
+        <source src="assets/gallery/" type="video/mp4">
+    </video>
+
+    <div class="hero-v2-overlay"></div>
+
+    <div class="hero-v2-container">
+
+        <!-- LEFT -->
+        <div class="hero-v2-content">
+
+            <h1 class="hero-v2-title">
+              Première entreprise<br> de <span class="blue">digitalisation</span><br> au Nord de<br> <span class="blue">l'Afrique</span>
+          </h1>
+
+            <p class="hero-v2-text">
+                IKSATECH Digital Services accompagne les entreprises<br> et organisations dans leur transformation digitale<br> avec des solutions innovantes, performantes<br> et durables.
+            </p>
+
+        </div>
+
+        
+
     </div>
 
-    <div class="hero-corner-tr">
-      <span style="height:8px"></span><span style="height:16px"></span><span style="height:6px"></span>
-      <span style="height:20px"></span><span style="height:10px"></span><span style="height:14px"></span>
-    </div>
-
-<h1 class="hero-bigtext">
-  <div class="hero-dots-grid"></div>
-  <img src="assets/service/logo.png" alt="IKSATECH"/>
-</h1>
-    <div class="hero-subtitle">
-      <h2>Accélérez votre transformation digitale avec des solutions ERP, IA, Cybersécurité et Développement sur mesure.</h2>
-      <p>Solutions IT &bull; Intelligence Artificielle &bull; ERP &bull; Cloud</p>
-      <button class="hero-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Prendre Rendez-vous →</button>
-    </div>
-  </section>
-
+</section>
   <!-- ═══════════ 2. À PROPOS DE NOUS ═══════════ -->
   <section class="section about" id="about">
     <div class="container">
@@ -84,59 +87,73 @@
     </div>
   </section>
 
-  <!-- ═══════════ 3. HISTORIQUE DE L'ENTREPRISE ═══════════ -->
-  <section class="section history" id="history">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">02. Notre Parcours</p>
-        <h2 class="section-title">Historique de l'Entreprise</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <span class="timeline-year">2021</span>
-          <div class="timeline-content">
-            <h3>Création d'IKSATECH</h3>
-            <p>Lancement de l'entreprise à Tanger avec une vision claire : accompagner les PME marocaines dans leur transformation digitale.</p>
-          </div>
+  <!-- ═══════════ 3. HISTOIRE DE L'ENTREPRISE ═══════════ -->
+<section class="company-story-section" id="history">
+    <div class="company-story-container">
+
+        <div class="company-story-header reveal">
+            <p class="company-story-eyebrow">02. Notre Parcours</p>
+            <h2 class="company-story-title">Historique de l'Entreprise</h2>
+            <p class="company-story-subtitle">
+                Une histoire construite autour de l'innovation, de la transformation digitale
+                et de l'excellence technologique.
+            </p>
         </div>
-        <div class="timeline-item reveal">
-          <span class="timeline-year">2022</span>
-          <div class="timeline-content">
-            <h3>Premiers partenariats</h3>
-            <p>Développement des premières plateformes web &amp; mobiles pour des clients locaux et constitution du pôle développement Full Stack.</p>
-          </div>
+
+        <div class="company-story-card reveal">
+
+            <div class="company-story-badge">
+                Depuis Janvier 2026
+            </div>
+
+            <div class="company-story-content">
+
+                <p>
+                    <strong>IKSATECH Digital Services</strong> est née de la passion de ses fondateurs pour les technologies de l’information,
+                    l’innovation et la transformation digitale. Convaincus que le numérique constitue un levier stratégique de développement,
+                    ils ont créé l’entreprise avec une ambition claire : accompagner les organisations dans leur évolution en concevant des
+                    solutions technologiques innovantes, performantes et adaptées aux défis d’aujourd’hui et de demain.
+                </p>
+
+                <p>
+                    Cette vision s’inscrit pleinement dans la dynamique de modernisation et de digitalisation portée par le Royaume du Maroc
+                    sous la conduite éclairée de Sa Majesté le Roi Mohammed VI, que Dieu L’assiste. Inspirée par les orientations nationales
+                    en faveur de l’économie numérique, de l’innovation et du développement des compétences, IKSATECH contribue activement à
+                    la transformation des entreprises en mettant la technologie au service de leur compétitivité et de leur croissance.
+                </p>
+
+                <p>
+                    Depuis sa création en janvier 2026 à Tanger, IKSATECH connaît une évolution continue. L’entreprise a rapidement établi
+                    son siège, développé ses premières solutions SaaS, renforcé son expertise grâce à des certifications internationales et
+                    élargi son écosystème avec la création de BI Digital Hub.
+                </p>
+
+                <p>
+                    Aujourd’hui, elle propose des solutions couvrant notamment la transformation digitale, les systèmes d’information,
+                    les ERP, l’intelligence artificielle, la Business Intelligence, le cloud, la cybersécurité et le développement
+                    d’applications sur mesure.
+                </p>
+
+                <p>
+                    Au-delà de la technologie, IKSATECH place l’humain, l’excellence et l’innovation au cœur de son engagement.
+                    Chaque projet est conçu comme un partenariat de confiance visant à créer de la valeur durable pour les entreprises,
+                    à optimiser leurs performances et à les préparer aux enjeux de l’économie numérique.
+                </p>
+
+                <p>
+                    <strong>
+                        Notre ambition est de faire d’IKSATECH un acteur de référence de la transformation digitale au Maroc et en Afrique,
+                        reconnu pour son expertise, son esprit d’innovation et sa capacité à accompagner durablement les organisations vers
+                        un avenir plus intelligent, plus connecté et plus performant.
+                    </strong>
+                </p>
+
+            </div>
+
         </div>
-        <div class="timeline-item reveal">
-          <span class="timeline-year">2023</span>
-          <div class="timeline-content">
-            <h3>Expansion des pôles d'expertise</h3>
-            <p>Ouverture des pôles Cybersécurité, ERP &amp; Transformation Digitale, et lancement des premiers projets d'automatisation IA.</p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <span class="timeline-year">2024</span>
-          <div class="timeline-content">
-            <h3>Certification IBM en IA</h3>
-            <p>IKSATECH obtient la certification IBM "AI Fundamentals" et structure son équipe autour de 30 collaborateurs.</p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <span class="timeline-year">2025</span>
-          <div class="timeline-content">
-            <h3>Lancement de nos solutions phares</h3>
-            <p>Déploiement d'IKSATECH Finance, LogiTrans, Cantine et de l'IA Agent / Automatisation auprès de nos partenaires.</p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <span class="timeline-year">2026</span>
-          <div class="timeline-content">
-            <h3>Installation Ibn Batouta &amp; rayonnement international</h3>
-            <p>Nouveaux bureaux à Tanger et développement commercial à l'international, aux côtés de partenaires comme Allianz, Virtuo ou Edge Consulting.</p>
-          </div>
-        </div>
-      </div>
+
     </div>
-  </section>
+</section>
 
   <!-- ═══════════ NOS PRODUITS ═══════════ -->
 <section class="section products" id="products">
@@ -616,7 +633,7 @@
             </div>
             <div class="cert-recipient">IKSATECH DIGITAL SERVICES</div>
             <div class="cert-real-img">
-              <img src="assets/gallery/certificat.jpeg" alt="IBM Certificate IKSATECH"/>
+              <img src="assets/gallery/certifica.png" alt="IBM Certificate IKSATECH"/>
             </div>
             <p class="cert-body">
               has successfully completed the mastery of<br/>
@@ -662,7 +679,6 @@
       <div class="client-logo"><img src="assets/logo/lines.jpg" alt="A.M.J Lines"/></div>
       <div class="client-logo"><img src="assets/logo/edge.png" alt="Edge Consulting"/></div>
       <div class="client-logo"><img src="assets/logo/boghazd.jpg" alt="Boghaz News"/></div>
-      <div class="client-logo"><img src="assets/logo/BDigital.webp" alt="Bi Digital Hub"/></div>
       <div class="client-logo"><img src="assets/logo/allianz.jpg" alt="Allianz"/></div>
       <div class="client-logo"><img src="assets/logo/images.png" alt="Virtuo Car Rent"/></div>
       <div class="client-logo"><img src="assets/logo/images (1).jpg" alt="Cyber Defense"/></div>
@@ -736,32 +752,76 @@
     </div>
   </section>
 
-  <!-- ═══════════ 10. NOS DIRIGEANTS ═══════════ -->
-  <section class="section leaders" id="leaders">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">09. Direction</p>
-        <h2 class="section-title">Nos Dirigeants</h2>
-      </div>
-      <div class="leaders-grid">
-        <div class="leader-card reveal">
-          <div class="leader-avatar">NP</div>
-          <h3>Nom Prénom</h3>
-          <span class="leader-role">Fondateur &amp; CEO</span>
+<!-- ═══════════ NOS DIRIGEANTS ═══════════ -->
+<section class="executives-section" id="leaders">
+
+    <div class="executives-container">
+
+        <div class="executives-header reveal">
+            <p class="executives-eyebrow">09. Direction</p>
+            <h2 class="executives-title">Nos Dirigeants</h2>
+            <p class="executives-subtitle">
+                Une direction expérimentée qui accompagne les entreprises
+                dans leur transformation digitale avec vision et innovation.
+            </p>
         </div>
-        <div class="leader-card reveal">
-          <div class="leader-avatar">NP</div>
-          <h3>Nom Prénom</h3>
-          <span class="leader-role">Directeur Technique (CTO)</span>
+
+        <!-- ===== Directeur 1 ===== -->
+
+        <div class="executive-card reveal">
+
+            <div class="executive-image">
+                <img src="assets/products/1782472333768.png" alt="">
+            </div>
+
+            <div class="executive-info">
+
+                <h3>IKHLAS BAKALI</h3>
+
+                <span class="executive-position">
+                    Président Directeur Général
+                </span>
+
+                <blockquote>
+                    "Notre ambition est de faire d'IKSATECH un acteur majeur de la
+                    transformation digitale en accompagnant durablement les entreprises
+                    avec des solutions innovantes, performantes et créatrices de valeur."
+                </blockquote>
+
+            </div>
+
         </div>
-        <div class="leader-card reveal">
-          <div class="leader-avatar">NP</div>
-          <h3>Nom Prénom</h3>
-          <span class="leader-role">Directeur Commercial &amp; Marketing</span>
+
+
+        <!-- ===== Directeur 2 ===== -->
+
+        <div class="executive-card reveal">
+
+            <div class="executive-image">
+                <img src="assets/products/1784122928840.png" alt="">
+            </div>
+
+            <div class="executive-info">
+
+                <h3>SAMIA BENAIM</h3>
+
+                <span class="executive-position">
+                    Directeur Technique (CTO)
+                </span>
+
+                <blockquote>
+                    "L'innovation n'a de valeur que lorsqu'elle répond concrètement
+                    aux défis des entreprises. Notre mission est de construire
+                    des solutions fiables, sécurisées et évolutives."
+                </blockquote>
+
+            </div>
+
         </div>
-      </div>
+
     </div>
-  </section>
+
+</section>
 
   <!-- ═══════════ 11. ÉVÉNEMENTS & PARTICIPATIONS ═══════════ -->
   <section class="section events" id="events">
@@ -859,10 +919,27 @@
           <div class="cc-info-item cc-span2"><div class="cc-info-icon"><i data-lucide="map-pin"></i></div><div><p class="cc-info-label">Adresse</p><p class="cc-info-val">Ibn Batouta Bureaux – 3e étage, Tanger, Maroc</p></div></div>
         </div>
         <div class="cc-social">
-          <a href="#" class="cc-social-btn">Instagram</a>
-          <a href="#" class="cc-social-btn">LinkedIn</a>
-          <a href="#" class="cc-social-btn">TikTok</a>
-        </div>
+  <a href="https://www.instagram.com/iksatech_official?igsh=MWJlc3AwZzNqMGlndQ=="
+     class="cc-social-btn"
+     target="_blank"
+     rel="noopener noreferrer">
+    Instagram
+  </a>
+
+  <a href="https://www.linkedin.com/company/iksatech/posts/?feedView=all"
+     class="cc-social-btn"
+     target="_blank"
+     rel="noopener noreferrer">
+    LinkedIn
+  </a>
+
+  <a href="https://www.tiktok.com/@iksatech_official?is_from_webapp=1&sender_device=pc"
+     class="cc-social-btn"
+     target="_blank"
+     rel="noopener noreferrer">
+    TikTok
+  </a>
+</div>
       </div>
       <div class="cc-right">
         <form class="cc-form" onsubmit="return false;">
