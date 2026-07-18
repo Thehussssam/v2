@@ -11,9 +11,19 @@ window.addEventListener('scroll', () => {
 // ─── Mobile burger ───
 const burger = document.getElementById('navBurger');
 const navLinks = document.querySelector('.nav-links');
-if (burger) {
+if (burger && navLinks) {
   burger.addEventListener('click', () => {
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    const isOpen = navLinks.classList.toggle('open');
+    burger.classList.toggle('active', isOpen);
+  });
+
+  // Close mobile menu when clicking a link
+  const navItems = navLinks.querySelectorAll('a');
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      burger.classList.remove('active');
+    });
   });
 }
 
