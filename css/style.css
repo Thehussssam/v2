@@ -3557,9 +3557,9 @@ height:150px;
     line-height: 1.1;
     color: #fff;
     margin-bottom: 30px;
-    
-    max-width: 800px;
-    width: 100%;
+
+    width: 1400px;
+    max-width: none;
 }
 
 .hero-v2-title .blue{
